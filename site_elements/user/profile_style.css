@@ -1,0 +1,31 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#main{
+	position: relative;
+	min-height: 990px;
+	padding: 0px;
+	border:1px solid silver;
+}
+#left_nav{
+	float: left;
+	min-height: 990px;
+	/*border: 1px solid silver;*/
+}
+#nav_op{
+	width: 200px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+#nav_op a{
+	padding-right: 30px;
+}
+
+
+#content{
+	margin-left: 10px;
+	min-height: 990px;
+	float: left;
+	border:1px solid silver;
+}

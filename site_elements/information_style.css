@@ -1,0 +1,12 @@
+/*Information Pages*/
+#item_label_content h4{
+	margin-top:0px;
+}
+#item_label p{
+	margin: 0px 0px 10px 35px;
+	font-size: 18px;
+}
+.info_des p{
+	margin: 40px;
+	font-size: 14px;
+}

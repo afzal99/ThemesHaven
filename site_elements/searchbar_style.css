@@ -1,0 +1,113 @@
+.sb_wrapper{
+	margin:0;
+	padding-top:0;
+	position: absolute;
+	width:100%;
+/*	border:1px solid blue;*/
+}
+.sb_wrapper ul{
+	height: 200px;
+}
+.sb_wrapper input[type="text"],
+ul.sb_dropdown{
+	border:1px solid #fff;
+	font-size:16px;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+/*	-moz-box-shadow:1px 1px 3px #555;
+	-webkit-box-shadow:1px 1px 3px #555;*/
+/*	-box-shadow:1px 1px 3px #555;*/
+	outline:none;
+	padding:6px 5px 6px 25px;
+	text-shadow:1px 1px 1px #fff;
+	width:65%;
+	float:left;
+	margin:3px 0px;
+}
+ul.sb_dropdown{
+	float:left;
+	list-style:none;
+	background: #fafafa; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#fafafa)); 
+	background: -moz-linear-gradient(top, #f2f2f2, #fafafa);
+	width:560px;
+	padding:10px;
+	-moz-border-radius:0px 0px 4px 4px;
+	-webkit-border-bottom-right-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	border-bottom-left-radius:4px;
+}
+ul.sb_dropdown li{
+	font-size:16px;
+	line-height:32px;
+	height:30px;
+	float:left;
+	width:50%;
+}
+ul.sb_dropdown li input[type="checkbox"]{
+	float:left;
+	margin:10px 4px 0 5px;
+}
+ul.sb_dropdown li.sb_filter{
+	width:100%;
+	border:1px solid #f9f9f9;
+	clear:both;
+	background: rgba(221, 221, 221, 0.25);
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#444;
+	height:26px;
+	line-height:16px;
+	padding:5px;
+	-moz-box-shadow:0px 0px 2px #777;
+	-webkit-box-shadow:0px 0px 3px rgba(85, 85, 85, 0.22) inset;
+
+}
+span.sb_up,
+span.sb_down{
+	position:absolute;
+	top:3px;
+	left:0px;
+	width:14px;
+	height:42px;
+/*	background-color:#f2f2f2;*/
+	background-position:center center; 
+	background-repeat: no-repeat;
+	z-index:10;
+	-moz-box-shadow:1px 0px 1px #ddd;
+	-webkit-box-shadow:1px 0px 1px #ddd;
+	-box-shadow:1px 0px 1px #ddd;
+	
+}
+span.sb_up{
+	background-image:url(up.png);
+	cursor: pointer;
+}
+span.sb_down{
+	background-image:url(down.png);
+	cursor: pointer;
+}
+input.sb_input{
+	height: 42px;
+	background-color: white;
+}
+input.sb_search{
+	background:#f2f2f2 url(search.png) no-repeat center center;
+	height:40px;
+	width:50px;
+	float:left;
+	border:none;
+	display:none;
+	margin:5px 0px 0px;
+/*	border:1px solid #fff;
+	-moz-box-shadow:1px 1px 3px #555;
+	-webkit-box-shadow:1px 1px 3px #555;
+	-box-shadow:1px 1px 3px #555;*/
+	outline:none;
+	cursor:pointer;
+	background-color:#fff;
+}
+input.sb_search:hover{
+	background-color:#fff;
+}

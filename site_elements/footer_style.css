@@ -1,0 +1,8 @@
+#footer_area{
+/*	position: absolute;
+	bottom: 0;*/
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #525252;
+}

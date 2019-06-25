@@ -1,0 +1,9 @@
+#ad_main{
+	position: absolute;
+	min-height: 500px;
+	min-width: 900px;
+	margin-top: 125px;
+	margin-left:205px;
+	overflow: hidden;
+	/*border: 1px solid blue;*/
+}

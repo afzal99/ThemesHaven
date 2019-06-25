@@ -1,0 +1,25 @@
+#pr_main{
+	position: absolute;
+	min-height: 100px;
+	width:990px;
+	top:125px;
+	font-family: verdana;
+	font-size: 12px;
+	margin-left: 168px;
+	overflow: scroll;
+	overflow-y: hidden;
+	/*border: 1px solid blue;*/
+
+}
+#ca_contents{
+	position: relative;
+	padding-left: 35px;
+	min-height: 100px;
+	/*border: 1px solid red;*/
+}
+.center{
+	text-align: center;
+}
+.fixed_width{
+	padding: 0px 60px 0px 60px;
+}

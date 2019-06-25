@@ -1,0 +1,24 @@
+#cas_main{
+	position: absolute;
+	min-height: 800px;
+	width:820px;
+	top:125px;
+	font-family: verdana;
+	font-size: 12px;
+	margin-left: 168px;
+	/*border: 1px solid blue;*/
+
+}
+#nw_contents{
+	position: relative;
+	padding-left: 35px;
+	min-height: 660px;
+	/*border: 1px solid red;*/
+}
+form{
+	margin-left: 50px;
+	margin-top: 15px;
+}
+.form-group input,.form-group select,.form-group textarea{
+	font-size: 12px;
+}

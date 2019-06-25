@@ -1,0 +1,44 @@
+#prs_main{
+	position: absolute;
+	min-height: 300px;
+	width:820px;
+	top:125px;
+	font-family: verdana;
+	font-size: 12px;
+	margin-left: 200px;
+	overflow: scroll;
+	overflow-y:hidden;
+	/*border: 1px solid blue;*/
+
+}
+#nw_contents{
+	position: relative;
+	padding-left: 35px;
+	min-height: 250px;
+	/*border: 1px solid red;*/
+}
+form{
+	margin-left: 50px;
+	margin-top: 15px;
+	padding-bottom: 40px;
+}
+#form_buttons{
+	margin-left: 30%;
+	margin-top: 30px;
+}
+#nw_contents button{
+	margin-left: 10px;
+	padding: 5px 10px 5px 10px;
+}
+#output{
+	width: 200px;
+	margin-top:10px;
+	margin-left: 17px;
+}
+.form-group input,.form-group select,.form-group textarea{
+	font-size: 12px;
+}
+
+.submit{
+	width:150px;
+}

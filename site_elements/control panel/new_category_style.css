@@ -1,0 +1,43 @@
+#nw_main{
+	position: absolute;
+	min-height: 100px;
+	width:820px;
+	top:125px;
+	font-family: verdana;
+	font-size: 12px;
+	overflow: hidden;
+	margin-left: 168px;
+	/*border: 1px solid blue;*/
+
+}
+#nw_contents{
+	position: relative;
+	padding-left: 35px;
+	min-height: 100px;
+	/*border: 1px solid red;*/
+}
+#nw_contents form{
+	margin-top:20px;
+}
+#nw_contents input{
+	font-size: 12px;
+}
+#nw_contents select{
+	font-size: 12px;
+}
+.center{
+	text-align: center;
+}
+
+.btn_s{
+	margin-top:20px;
+	padding-right: 25px;
+}
+.btn_save{
+	font-size: 12px;
+	padding: 8px 22px 8px 22px;
+}
+.msg{
+	margin-top: -20px;
+	text-align: center;
+}

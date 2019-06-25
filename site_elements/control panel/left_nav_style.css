@@ -1,0 +1,96 @@
+#main{
+	position: fixed;
+	min-height: 800px;
+	width:168px;
+	top:0px;
+	left: 0px;
+	padding:0px;
+	margin:0px;
+	font-family: verdana;
+	font-size: 13px;
+	background-color: #424F5A;
+	/*border:1px solid silver;*/
+}
+#logo{
+	position: relative;
+	min-height:60px;
+	color: white;
+/*	border:1px solid silver;*/
+}
+#logo h2{
+	font-size: 18px;
+	text-align:center;
+	margin-bottom: 0px;
+}
+#logo h3{
+	margin-top: 0px;
+	font-size: 13px;
+	text-align:center
+}
+
+#control_options{
+	position: relative;
+	min-height:600px;
+	padding-left: 20px;
+	color: rgba(255, 255, 255, 0.72);
+	/*border:1px solid silver;*/
+}
+
+.nav_op{
+	min-height: 30px;
+	margin-left: -17px;
+	padding-left: 0px;
+}
+.nav_op a{
+	padding:6px 45px 6px 20px;
+}
+.logout{
+	padding-right: -50px;
+	margin-top: 10px;
+	margin-left: -17px;
+}
+
+.logout h4{
+	margin-top: 0px;
+	text-align: center;
+	font-size: 11px;
+}
+
+.nav_op li{
+	padding-left: 00px;
+	list-style: none;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	/*border:1px solid silver;*/
+}
+.nav_op li span{
+	color:white;
+	margin-right: 4px;
+}
+.nav_op .active{
+	background-color: #343F48;
+	border-left:5px solid #FF9500;
+	margin-left: -5px;
+}
+.nav_op li:hover{ 
+	background-color: #343F48;
+	margin-left: -5px;
+	border-left:5px solid #FF9500;
+}
+.nav_op li a:hover{ 
+	text-decoration: none;
+}
+.nav_op li a:link{ 
+	color: rgba(255, 255, 255, 0.72);
+	text-decoration: none;
+}
+.nav_op li a:visited{ 
+	color: rgba(255, 255, 255, 0.72);;
+	text-decoration: none;
+	cursor: pointer;
+}
+.nav_op li a:active{ 
+	color: rgba(255, 255, 255, 0.72);;
+	text-decoration: none;
+	cursor: pointer;
+}

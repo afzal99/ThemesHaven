@@ -1,0 +1,8 @@
+#info_main{
+	position: absolute;
+	min-height: 100px;
+	margin-top: 125px;
+	margin-left:200px;
+	overflow: hidden;
+	/*border: 1px solid blue;*/
+}

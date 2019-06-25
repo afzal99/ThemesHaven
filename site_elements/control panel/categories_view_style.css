@@ -1,0 +1,28 @@
+#ca_main{
+	position: absolute;
+	min-height: 100px;
+	width:820px;
+	top:125px;
+	font-family: verdana;
+	font-size: 12px;
+	overflow: scroll;
+	overflow-y: hidden;
+	margin-left: 168px;
+	/*border: 1px solid blue;*/
+
+}
+#ca_contents{
+	position: relative;
+	padding-left: 35px;
+	min-height: 100px;
+	padding-bottom: 60px;
+	/*border: 1px solid red;*/
+}
+.center{
+	text-align: center;
+}
+
+
+
+
+

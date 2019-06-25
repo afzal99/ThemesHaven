@@ -1,0 +1,12 @@
+#ad_main{
+	position: absolute;
+	min-height: 500px;
+	min-width: 500px;
+	margin-top: 125px;
+	margin-left:205px;
+	overflow: hidden;
+	/*border: 1px solid blue;*/
+}
+#ad_main form{
+	margin-top: 10px;
+}

@@ -1,0 +1,14 @@
+body{
+
+}
+#main{
+	position: relative;
+	min-height: 533px;
+	border:1px solid silver;
+}
+#wiz{
+	height: 31px;
+	padding-top:10px;
+	font-size: 12px;
+	/*border:1px solid silver;*/
+}

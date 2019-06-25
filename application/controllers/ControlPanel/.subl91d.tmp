@@ -1,0 +1,193 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * 
+ * @authors ahmed_monjur (ahmed.monjur21@gmail.com)
+ * @date    2015-10-21 10:58:30
+ */
+
+class Categories extends CI_Controller {
+	    public function index(){
+    	redirect('controlpanel/categories/all');
+}
+   
+     	public function All(){
+	        $this->load->model('ControlPanel/Category_Model');
+			// pagination code start
+			$this->load->library('pagination');
+
+		    $config['base_url'] = site_url('controlpanel/categories/all');
+	        $config['total_rows'] = $this->db->get('tbl_category')->num_rows();
+	        $config['enable_query_strings'] = TRUE;
+	        $config['use_page_numbers'] = TRUE;
+	        $config['query_string_segment'] = 'page';
+	        $config['page_query_string'] = TRUE;
+	        $config['per_page'] = 15;
+	        $config['num_links'] = 8;
+	        $config['full_tag_open'] = '<ul class="pagination no-margin">';
+	        $config['full_tag_close'] = '</ul>';
+	        $config['cur_tag_open'] = '<li class="active"><a href="">';
+	        $config['cur_tag_close'] = '</a></li>';
+	        $config['prev_tag_open'] = '<li>';
+	        $config['prev_tag_close'] = '</li>';
+	        $config['next_tag_open'] = '<li>';
+	        $config['next_tag_close'] = '</li>';
+	        $config['num_tag_open'] = '<li>';
+	        $config['num_tag_close'] = '</li>';
+	        $config['last_tag_open'] = '<li>';
+	        $config['last_tag_close'] = '</li>';
+	        $config['first_tag_open'] = '<li>';
+	        $config['first_tag_close'] = '</li>';
+	        $config['next_link'] = 'Next >';
+	        $config['prev_link'] = '< Prev';
+
+
+	        if ($this->input->get('page')){
+	            $sgm = (int) trim($this->input->get('page'));
+	            $data['segment'] = $config['per_page'] * ($sgm - 1);
+	        } 
+	        else {
+	            $data['segment'] = 0;
+	        }
+
+	        $this->pagination->initialize($config);
+
+	        $query = $this->db->limit($config['per_page'], $data['segment'])->order_by('name', 'asc')->get('tbl_category');
+	        $data['categories'] = $query->result_array();
+
+
+		     	$data['tab']='tab2';
+		     	$data['prefix']='';
+		     	$this->load->view('controlpanel/left_nav',$data);
+
+		     	$data['title']='Categories';
+		     	$data['t1']=array(
+		     			'name'=> 'All Categories',
+		     			'url' => 'all'
+
+		     		);
+		     	$data['t2']=array(
+		     			'name'=> 'Insert New',
+		     			'url' => 'addnew'
+
+		     		);
+		     	$data['t3']='';
+		     	$data['t4']='';
+		     	$data['t5']='';
+		     	$data['t6']='';
+		     	$data['t7']='';
+
+     			$data['s_tab']='s_tab1';
+     			$this->load->view('controlpanel/menu_view',$data);
+     			$this->load->view('controlpanel/categories_view',$data);
+     		}
+
+     	public function addnew(){
+     			$data['tab']='tab2';
+		     	$data['prefix']='';
+		     	$this->load->view('controlpanel/left_nav',$data);
+
+		     	$data['title']='Categories';
+	
+		     	$data['t1']=array(
+		     			'name'=> 'All Categories',
+		     			'url' => 'all'
+
+		     		);
+		     	$data['t2']=array(
+		     			'name'=> 'Insert New',
+		     			'url' => 'addnew'
+
+		     		);
+		     	$data['t3']='';
+		     	$data['t4']='';
+		     	$data['t5']='';
+		     	$data['t6']='';
+		     	$data['t7']='';
+
+
+     			$data['s_tab']='s_tab2';
+     			$this->load->view('controlpanel/menu_view',$data);
+     			$this->load->view('controlpanel/ca_insert_view',$data);
+     			
+     		}
+     	public function Create(){
+
+        $data['title'] = 'Create New Category';
+        
+      if($this->input->post('caName'))
+      {
+        $caname = $this->input->post('caName');
+        $s = $this->input->post('status');
+
+		$this->db->where('name',$caname);
+        $num_rows=$this->db->count_all_results('tbl_category');
+
+        if($num_rows==0)
+        {
+	        $info = array(
+	          'name' => $caname
+	        );
+
+	        $this->db->insert('tbl_category',$info);
+
+	        $qu=$this->db->select('*')->from('tbl_category')->where('name',$caname)->get();
+	        $res = $qu->result_array();
+	        foreach($res as $rz){
+			     $p_id= $rz['id'];
+			}
+
+			 $in = array(
+	          'parent_id'  => $p_id,
+	          'status'     => $s,
+	          'date_added' => date("Y-m-d H:i:s")
+	        );
+			$this->db->insert('category_description',$in);
+
+	        $this->session->set_flashdata('msg','<p class="msg text-success">Category Added Successfully !</p>');
+	    	redirect('controlpanel/Categories/addnew');
+	    }
+        else
+        {	
+	        $this->session->set_flashdata('msg','<p class="msg text-danger">Category Already Exists !</p>');
+	    	redirect('controlpanel/Categories/addnew');
+	    }
+  
+      redirect('controlpanel/Categories/addnew');
+
+      }
+      else{
+
+      	// $m=date("Y-m-d H:i:s");
+
+      
+
+
+      	$this->session->set_flashdata('msg','<p class="msg text-danger">Insert a value in category name field !</p>');
+        redirect('controlpanel/Categories/addnew');
+      }
+
+
+     }
+     public function delete(){
+
+     	$c = $this->input->get('id',true);
+
+
+     	echo $c;
+
+
+
+
+
+
+
+
+
+
+
+
+
+     }
+     }

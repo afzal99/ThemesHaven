@@ -1,0 +1,98 @@
+@font-face { 
+  font-family: Berlin Sans FB Demi; 
+  src: local("Berlin Sans FB Demi"), url('fonts/BRLNSDB.ttf'); 
+} 
+
+#logo{
+	position: relative;
+	min-height:35px;
+	width:100%;
+	/*border:1px solid silver;*/
+	font: normal 800% 'Berlin Sans FB Demi', arial, sans-serif;
+}
+
+#logo a:link{color: black;}
+
+#logo h3{
+	margin: 0px;
+	float: left;
+	color: black;
+	font-size: 20px;
+}
+#logo h4{
+	margin: 0px;
+	float: left;
+	font-size: 22px;
+	color: #2D7619;
+}
+
+
+
+
+#loginheader{
+	position: relative;
+	width:100%;
+	min-height:40px;
+	/*border:1px solid silver;*/
+	font-size: 20px;
+}
+
+
+#info{
+	margin-top:12%;
+	/*border:1px solid rgba(167, 167, 167, 0.57);*/
+}
+#info .form-control{
+	height: 38px;
+	padding-right: 45px;
+	font-size: 13px;
+}
+#info .glyphicon{
+	margin-right:20px;
+}
+#info .glyp{
+	position: relative;
+	float: right;
+	margin: -28px 15px 0px 0px;
+	
+}
+
+#checkbox{
+	margin-top: 12px;
+	line-height: 21px;
+	color:#525252;
+}
+
+#checkbox a{color:#525252;}
+#checkbox a:visited{color:#525252;}
+
+#info button{
+	height: 39px;
+	width:100%;
+	margin-top:	6px;
+	border:hidden;
+	margin-left:0px;
+	font-size: 13px;
+	color:white;
+	background: #6db3f2; /* Old browsers */
+	background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6db3f2), color-stop(50%,#54a3ee), color-stop(51%,#3690f0), color-stop(100%,#1e69de)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* IE10+ */
+	background: linear-gradient(top, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+
+#info button:hover{background: rgb(75,162,239); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(75,162,239,1) 0%, rgba(51,146,235,1) 50%, rgba(24,127,238,1) 51%, rgba(27,92,197,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(75,162,239,1)), color-stop(50%,rgba(51,146,235,1)), color-stop(51%,rgba(24,127,238,1)), color-stop(100%,rgba(27,92,197,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(75,162,239,1) 0%,rgba(51,146,235,1) 50%,rgba(24,127,238,1) 51%,rgba(27,92,197,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(75,162,239,1) 0%,rgba(51,146,235,1) 50%,rgba(24,127,238,1) 51%,rgba(27,92,197,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(75,162,239,1) 0%,rgba(51,146,235,1) 50%,rgba(24,127,238,1) 51%,rgba(27,92,197,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(75,162,239,1) 0%,rgba(51,146,235,1) 50%,rgba(24,127,238,1) 51%,rgba(27,92,197,1) 100%); /* W3C */}
+
+
+
+
+/*LOGIN AREA*/

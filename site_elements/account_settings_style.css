@@ -1,0 +1,66 @@
+.settings_area{
+	height: auto;
+	width: 980px;
+	margin-left: 25px;
+	overflow: hidden;
+	/*border:1px solid silver;*/
+}
+.settings_area table th{
+	text-align: right;
+}
+.settings_area table td{
+	padding: 0px 12px 0px 12px;
+}
+
+#pro_view img{
+	width:50px;
+	height: 50px;
+	outline: none;
+}
+#userpanel{
+	position:absolute;
+	min-height: 350px;
+	width: 20%;
+	display: none;
+	padding:0px;
+	margin-top:41px;
+	color: white;
+	float: right;
+	left:80%;
+	/*border:1px solid red;*/
+	/*border:1px solid red;*/
+	background-color:rgba(51, 50, 50, 0.88);
+	box-shadow: 2px 2px 18px black;
+}
+#userpanel hr{
+	margin-top: 10px;
+	margin-bottom: 13px;
+}
+#uicon{
+	margin-top: 5px;
+	text-align: center;
+}
+#uname{
+	margin-top:5px;
+	text-align: center;
+}
+#umenu{
+	padding-bottom: 10px;
+}
+#umenu ul {
+	padding-left: 0px;
+/*
+	padding-left: 60px;*/
+}
+#umenu ul li{
+	text-align: center;
+	list-style: none;
+	padding-bottom: 10px;
+}
+#umenu ul li a{
+	color: white;
+
+}
+#umenu ul li a span{
+	margin-right: 6px;
+}

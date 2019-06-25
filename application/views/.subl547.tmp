@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php echo $title; ?></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>site_elements/signup_style.css"/>
+	<script src="<?php echo site_url(); ?>site_elements/jquery/jquery-1.11.3.min.js"></script>
+	<script src="<?php echo site_url(); ?>site_elements/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="<?php echo site_url(); ?>site_elements/css/bootstrap.min.css"/>
+	<style>
+		body{background-color:rgb(133, 214, 243);}
+	</style>
+	
+
+</head>
+<body>
+
+	<div id="main">
+		<div class="col-md-1"></div>
+    	<div class="col-md-10" id="content_area">
+	    	<div id="content_label">
+	    		<h2> Sign Up </h2><h3>Form Wizard </h3>
+	    	</div>
+	    	<div class="col-md-12" id="stage">
+	    		<div class="col-md-3">
+	    			<div class="p_ico" style="background-color:<?php if($s1){echo $s1;}?>;"></div>
+	    			<div class="p_info">
+	    				<h1> Account Information </h1>
+	    				<h2> Enter login information</h2>
+	    				<h3> username, password, email.</h3>
+
+	    			</div>
+	    		</div>
+	    		<div class="col-md-3">
+	    			<div class="p_ico" style="background-color:<?php if($s2){echo $s2;}?>;"></div>
+	    			<div class="p_info">
+	    				<h1> Personal Information </h1>
+	    				<h2> Enter your personal detail</h2>
+	    				<h3>full name, gender etc.</h3>
+	    			    
+
+	    			</div>
+	    		</div>
+	    		<div class="col-md-3">
+	    			<div class="p_ico" style="background-color:<?php if($s3){echo $s3;}?>"></div>
+	    			<div class="p_info">
+	    				<h1> Payment Information </h1>
+	    				<h2> Select Payment Method</h2>
+	    				<h3>type, payment via etc.</h3>
+
+	    			</div>
+	    		</div>
+	    		<div class="col-md-3">
+	    			<div class="p_ico" style="background-color:<?php if($s4){echo $s4;}?>;"></div>
+	    			<div class="p_info">
+	    				<h1> Confirm Your Details </h1>
+	    				<h2> Verify Your Information</h2>
+	    				<h3>given in previous steps.</h3>
+
+	    			</div>
+	    		</div>
+
+	    	</div>
+	    	<div class="col-md-12">
+	    		<div class="col-md-12" id="area_hed">
+	    			<div class="col-md-10"><h1><?php echo $a_h1;?> </h1> <h2><?php echo $a_h2;?></h2></div> <div class="col-md-2"><p style="">Steps <?php echo $step_n; ?>-4</p></div>
+	    		</div>
+	    		<div class="col-md-12" id="info_area">
+	    			<div class="col-md-9">
+
+	    				<form role="form">
+	    						<!--Account Information-->
+							  <div class="form-group" style="<?php if($stp1){echo $stp1;} ?>">
+							    <label for="username">User Name</label>
+							    <input type="text" placeholder="Login" required="required" class="form-control" id="username">
+							  </div>
+							  <div class="form-group" style="<?php if($stp1){echo $stp1;} ?>">
+							    <label for="pwd">Password</label>
+							    <input type="password" placeholder="Password" required="required" class="form-control" id="pwd">
+							  </div>
+
+							  <div class="form-group" style="<?php if($stp1){echo $stp1;} ?>">
+							    <label for="pwd">Confirm Password</label>
+							    <input type="password" placeholder="Password" required="required" class="form-control" id="pwd">
+							  </div>
+
+							  <div class="form-group" style="<?php if($stp1){echo $stp1;} ?>">
+							    <label for="email">Email address</label>
+							    <input type="email" placeholder="Enter your email ID" required="required" class="form-control" id="email">
+							  </div>
+
+							  <!--Personal Information-->
+
+
+
+
+
+
+
+
+
+
+							  <!--Payment Information-->
+
+
+
+
+
+
+
+
+							  <!--Confirm Information-->
+
+
+
+	    			</div>
+
+	    		</div>
+
+
+				<button hred="next.php" id="btn_next" class="btn btn-primary pull-right"><h2>Next Step</h2><h3><?php echo $btn_info; ?></h3></button>
+				
+				</form>
+
+
+	    	</div>
+
+
+
+    	</div>
+    	<div class="col-md-1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#cus_main{
+	position: absolute;
+	min-height: 900px;
+	margin-top: 125px;
+	margin-left:200px;
+	overflow: hidden;
+	/*border: 1px solid blue;*/
+}
+.center{
+	text-align: center;
+}

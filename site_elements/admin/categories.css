@@ -1,0 +1,70 @@
+body{
+	height: 100%;
+
+}
+#main{
+	position: relative;
+	min-height: 100%;
+	border:1px solid silver;
+}
+#wiz{
+	height: 31px;
+	padding-top:10px;
+	font-size: 12px;
+	/*border:1px solid silver;*/
+}
+
+#box{
+	position: relative;
+	min-height: 500px;
+	margin-top: 5px;
+	border-radius: 6px 6px 0px 0px;
+	padding: 0px;
+	border:1px solid rgba(192, 192, 192, 0.51);
+}
+
+#div_label{
+	position: relative;
+	min-height: 40px;
+	width: 100%;
+	padding-top: 6px;
+	border-bottom:1px solid rgba(192, 192, 192, 0.43);
+	background-image: url(image/box.png);
+}
+#div_label p{
+	font-weight: bold;
+	color: rgb(9, 61, 99);
+	font-size: 16px;
+	float: left;
+	padding: 0px;
+}
+#div_label ul li{
+	list-style: none;
+	float: left;
+	padding-right: 10px;
+
+}
+
+
+
+#div_content{
+	padding: 10px;
+	font-size: 12px;
+}
+#div_content table thead tr th{
+	text-align: center;
+}
+#div_content table thead tr{
+	background-image: url(image/box.png);
+}
+.numbr{
+	width: 5px;
+	text-align: center;
+}
+.act{
+	text-align: center;
+}
+
+#page_num{
+	text-align: center;
+}

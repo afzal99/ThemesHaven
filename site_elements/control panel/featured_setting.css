@@ -1,0 +1,18 @@
+#info_main{
+	position: absolute;
+	min-height: 500px;
+	margin-top: 125px;
+	margin-left:205px;
+	overflow: hidden;
+	/*border: 1px solid blue;*/
+}
+.custom-header{
+	text-align: center;
+	font-weight: bold;
+}
+#form_buttons{
+	 margin-top: 10px;
+}
+#form_buttons .submit{
+	width: 120px;
+}
